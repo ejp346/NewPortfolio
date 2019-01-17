@@ -1,0 +1,51 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+h1 {
+  font-size: 45px;
+  line-height: 72px;
+  color: white;
+}
+
+h1 span {
+  opacity: .2;
+}
+
+p {
+  font-size: 15px;
+  line-height: 24px;
+  color: white;
+  font-weight: 500;
+}
+
+p span {
+  font-weight: 400;
+  opacity: .5;
+}
+
+.social {
+  background-color: blue;
+}
+
+.navbar {
+  width: 35px;
+}
+
+.navbar img {
+  width: 100%
+}
+
+.hero {
+  background-color: red;
+}
+
+.footer {
+  background-color: black;
+}

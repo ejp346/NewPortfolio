@@ -7,6 +7,39 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 16px;
+  border-style: solid;
+  border-color: red;
+  border-width: 1px;
+  background-color: black;
+}
+
+
+.hero-img {
+  grid-column: 1 / 13;
+}
+.hero-img img {
+  width: 100%;
+}
+
+.hero {
+  grid-column: 3 / 13;
+}
+
+.content {
+  grid-column: 3 / 11;
+}
+
+.social {
+  grid-column: 1 / 2;
+}
+
+.content img {
+  width: 100%;
+}
 
 h1 {
   font-size: 45px;

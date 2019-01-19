@@ -14,31 +14,123 @@ body {
   border-style: solid;
   border-color: red;
   border-width: 1px;
-  background-color: black;
-}
-
-
-.hero-img {
-  grid-column: 1 / 13;
-}
-.hero-img img {
-  width: 100%;
+  background: url(../images/heroimg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-color: white;
 }
 
 .hero {
-  grid-column: 3 / 13;
+  grid-column: 3 / 12;
+  border-style: solid;
+  border-color: red;
+  border-width: 1px;
+  height: 100vh;
+}
+
+.hero h1 {
+  top: 35%;
+  position: absolute;
+  margin: 0;
+  border-style: solid;
+  border-color: blue;
+  border-width: 1px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-column-gap: 16px;
+  border-style: solid;
+  border-color: blue;
+  border-width: 1px;
+}
+
+.left {
+  border-style: solid;
+  border-color: blue;
+  border-width: 1px;
+}
+
+.left p {
+  border-style: solid;
+  border-color: blue;
+  border-width: 1px;
+}
+
+.left img {
+  width: 9px;
+  border-style: solid;
+  border-color: blue;
+  border-width: 1px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+.right {
+  border-style: solid;
+  border-color: blue;
+  border-width: 1px;
+  text-align: right;
+}
+
+.right a {
+  text-decoration: none;
+  color: white;
+}
+
+.right a:hover {
+  color: #0054A5;
+  transition: 0.5s;
 }
 
 .content {
   grid-column: 3 / 11;
+  border-style: solid;
+  border-color: red;
+  border-width: 1px;
 }
 
 .social {
-  grid-column: 1 / 2;
+  grid-column: 2 / 3;
+  width: 35px;
 }
 
-.content img {
+.social ul {
+  list-style: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+  width: 35px;
+  padding-left: 0;
+}
+
+.social ul li {
+  margin-bottom: 24px;
+  width: 16px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+
+}
+
+.social ul li img {
   width: 100%;
+}
+
+
+.content img {
+  width: 80%;
+}
+
+.project1 {
+  position: relative;
+  top: 30%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
 }
 
 h1 {
@@ -65,20 +157,4 @@ p span {
 
 .social {
   background-color: blue;
-}
-
-.navbar {
-  width: 35px;
-}
-
-.navbar img {
-  width: 100%
-}
-
-.hero {
-  background-color: red;
-}
-
-.footer {
-  background-color: black;
 }

@@ -47,7 +47,26 @@ body {
   width: 9px;
   margin-right: 16px;
   vertical-align: middle;
+  animation: infiniteNext 1.5s ease infinite;
 }
+
+
+@keyframes infiniteNext {
+  0% {
+    opacity: 0;
+    transform: translate(0px, -15px);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0px, 15px);
+  }
+}
+
+
 
 .right {
   text-align: right;
@@ -75,7 +94,7 @@ body {
 
 .social ul {
   position: fixed;
-  top: 30%;
+  top: 35%;
   list-style: none;
   width: 35px;
   padding-left: 0;
@@ -93,6 +112,7 @@ body {
 
 .social ul li img {
   width: 100%;
+  opacity: 0.5;
 }
 
 .social ul li img.hover {
@@ -107,10 +127,6 @@ body {
 .social ul li img.hover:hover {
   opacity: 1;
 } 
-
-.social ul li img.hover.soundcloud {
-  top: 6px;
-}
 
 .social .logo {
   width: 35px;
@@ -148,6 +164,17 @@ p span {
   display: flex;
   align-items: center;
   margin-bottom: 150px;
+}
+
+.project-wpr a {
+  text-decoration: none;
+  position: relative;
+  transition: 0.5s;
+  left: 0;
+}
+
+.project-wpr a:hover {
+  left: 15px;
 }
 
 .project-wpr .txt-wpr {

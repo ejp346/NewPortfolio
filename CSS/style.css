@@ -11,9 +11,6 @@ body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 16px;
-  border-style: solid;
-  border-color: red;
-  border-width: 1px;
   background: url(../images/heroimg.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -34,75 +31,52 @@ body {
   top: 35%;
   position: absolute;
   margin: 0;
-  border-style: solid;
-  border-color: blue;
-  border-width: 1px;
 }
 
 .footer {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-column-gap: 16px;
-  border-style: solid;
-  border-color: blue;
-  border-width: 1px;
-}
-
-.left {
-  border-style: solid;
-  border-color: blue;
-  border-width: 1px;
-}
-
-.left p {
-  border-style: solid;
-  border-color: blue;
-  border-width: 1px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  width: 70%;
+  left: 52%;
+  transform: translateX(-50%);
 }
 
 .left img {
   width: 9px;
-  border-style: solid;
-  border-color: blue;
-  border-width: 1px;
   margin-right: 16px;
   vertical-align: middle;
 }
 
 .right {
-  border-style: solid;
-  border-color: blue;
-  border-width: 1px;
   text-align: right;
 }
 
 .right a {
   text-decoration: none;
   color: white;
+  transition: 0.5s;
 }
 
 .right a:hover {
   color: #0054A5;
-  transition: 0.5s;
 }
 
 .content {
   grid-column: 3 / 11;
-  border-style: solid;
-  border-color: red;
-  border-width: 1px;
 }
 
 .social {
   grid-column: 2 / 3;
   width: 35px;
+  padding-top: 24px;
 }
 
 .social ul {
+  position: fixed;
+  top: 30%;
   list-style: none;
-  border-style: solid;
-  border-width: 1px;
-  border-color: red;
   width: 35px;
   padding-left: 0;
 }
@@ -110,28 +84,42 @@ body {
 .social ul li {
   margin-bottom: 24px;
   width: 16px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: red;
+}
 
+.social ul li a {
+  position: relative;
+  display: block;
 }
 
 .social ul li img {
   width: 100%;
 }
 
-
-.content img {
-  width: 80%;
+.social ul li img.hover {
+  position: absolute;
+  width: 16px;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: 0.5s;
 }
 
-.project1 {
-  position: relative;
-  top: 30%;
-  border-style: solid;
-  border-width: 1px;
-  border-color: red;
+.social ul li img.hover:hover {
+  opacity: 1;
+} 
+
+.social ul li img.hover.soundcloud {
+  top: 6px;
 }
+
+.social .logo {
+  width: 35px;
+}
+
+.social .logo img {
+  width: 100%;
+}
+
 
 h1 {
   font-size: 45px;
@@ -155,6 +143,69 @@ p span {
   opacity: .5;
 }
 
-.social {
-  background-color: blue;
+
+.project-wpr {
+  display: flex;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.project-wpr .txt-wpr {
+  position: absolute;
+  width: 500px;
+}
+
+.project-wpr .txt-wpr p {
+  padding-left: 24px;
+}
+
+.project-wpr .txt-wpr p::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 1px;
+  background-color: white;
+  position: relative;
+  top: 12px;
+  left: -24px;
+}
+
+.project-wpr .img-1-wpr {
+  background-image: url("../images/project.png");
+  background-size: cover;
+  width: 600px;
+  height: 400px;
+  margin-left: auto;
+}
+
+.project-wpr .img-2-wpr {
+  background-image: url("../images/project.png");
+  background-size: cover;
+  width: 600px;
+  height: 400px;
+  margin-left: auto;
+}
+
+.project-wpr .img-3-wpr {
+  background-image: url("../images/project.png");
+  background-size: cover;
+  width: 600px;
+  height: 400px;
+  margin-left: auto;
+}
+
+.project-wpr .img-4-wpr {
+  background-image: url("../images/project.png");
+  background-size: cover;
+  width: 600px;
+  height: 400px;
+  margin-left: auto;
+}
+
+.project-wpr .img-5-wpr {
+  background-image: url("../images/project.png");
+  background-size: cover;
+  width: 600px;
+  height: 400px;
+  margin-left: auto;
 }

@@ -16,7 +16,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  background-color: white;
+  background-color: black;
 }
 
 .hero {
@@ -26,6 +26,7 @@ body {
   border-width: 1px;
   height: 100vh;
 }
+
 
 .hero h1 {
   top: 35%;
@@ -43,7 +44,7 @@ body {
   transform: translateX(-50%);
 }
 
-.left img {
+.left img, .left-casestudy img {
   width: 9px;
   margin-right: 16px;
   vertical-align: middle;
@@ -66,8 +67,6 @@ body {
   }
 }
 
-
-
 .right {
   text-align: right;
 }
@@ -82,7 +81,7 @@ body {
   color: #0054A5;
 }
 
-.content {
+.content, .description-wpr {
   grid-column: 3 / 11;
 }
 
@@ -143,6 +142,11 @@ h1 {
   color: white;
 }
 
+h2 {
+  font-size: 24px;
+  color: white;
+}
+
 h1 span {
   opacity: .2;
 }
@@ -163,7 +167,7 @@ p span {
 .project-wpr {
   display: flex;
   align-items: center;
-  margin-bottom: 150px;
+  margin-bottom: 144px;
 }
 
 .project-wpr a {
@@ -236,3 +240,65 @@ p span {
   height: 400px;
   margin-left: auto;
 }
+
+
+
+/*Columbia Case Study*/
+
+.grid-columbia {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 16px;
+  background: url(../images/columbiabg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  margin-bottom: 144px;
+  height: 91vh;
+}
+
+.bgcontainer {
+  background-color: black;
+}
+
+.hero-columbia {
+  grid-column: 3 / 12;
+  height: 100vh;
+}
+
+.casestudy-wpr {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 16px;
+}
+
+.description-wpr {
+  grid-column: 3 / 12;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 88px;
+}
+
+.image-wpr {
+  grid-column: 3 / 12;
+  margin-bottom: 88px;
+}
+
+.image-wpr img {
+  width: 100%;
+}
+
+.description-wpr p {
+  width: 552px;
+}
+
+.hero-columbia h1 {
+  top: 35%;
+  position: absolute;
+  margin: 0;
+  width: 500px;
+}
+
+
+

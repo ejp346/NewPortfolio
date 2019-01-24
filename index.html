@@ -8,9 +8,76 @@
    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/style.css">
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
+
+
+<!-- JavaScript begins here! -->
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        var heightOfWindow = $(window).scrollTop() + $(window).height();
+        var halfOfWindow = heightOfWindow / 2;
+
+      $(document).on('scroll', function(){
+        var triggerDivTopPos = $(".content").offset().top - $(window).scrollTop();
+
+        if (triggerDivTopPos < halfOfWindow) {
+          $(".bg-img").css("opacity", "0.3");
+          $(".fade-out").css("opacity", "0");
+        } else {
+          $(".bg-img").css("opacity", "1");
+          $(".fade-out").css("opacity", "1");
+        }
+      })
+
+      // This notification will fade in after 2 seconds (2000 miliseconds is how JavaScript determines 2 seconds)
+      setTimeout(function() {
+        $(".notification").css("opacity", "1");
+      }, 2000)
+
+    })
+  </script>
+
+
+<!-- HTML begins here -->
+
+
+  <div class="notification">
+    <img class="notificationicon" src="images/notificationicon.png" />
+
+    <div class="notificationmessage">
+    <img class="messageicon" src="images/messageicon.png">
+    <p class="message">Dude! Hit me up now.</p>
+  </div>
+    <div class="buttons">
+      <a href="mailto:epark346@gmail.com">REPLY</a>
+      <a class="close">CLOSE</a>
+    </div>
+  </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <div class="grid">
+
 
 
     <div class="social">
@@ -45,6 +112,9 @@
       </h1>
 
     </div>
+
+      <div class="bg-img"></div>
+      <div class="bg-layer"></div>
 
     <div class="content">
 
@@ -108,7 +178,7 @@
 
     <div class="footer">
       <div class="left">
-        <p><img src="images/arrowdown.png" /> See my work</p>
+        <p class="fade-out"><img src="images/arrowdown.png" /> See my work</p>
       </div>
       <div class="right">
         <p>
@@ -118,5 +188,7 @@
     </div>
 
   </div>
+
+
 </body>
 </html>

@@ -8,8 +8,36 @@
    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/style.css">
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
+
+<!-- JavaScript begins here! -->
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        var heightOfWindow = $(window).scrollTop() + $(window).height();
+        var halfOfWindow = heightOfWindow / 2;
+
+      $(document).on('scroll', function(){
+        var triggerDivTopPos = $(".casestudy-wpr").offset().top - $(window).scrollTop();
+
+        if (triggerDivTopPos < halfOfWindow) {
+          $(".fade-out").css("opacity", "0");
+        } else {
+          $(".fade-out").css("opacity", "1");
+        }
+      })
+
+      // This notification will fade in after 2 seconds (2000 miliseconds is how JavaScript determines 2 seconds)
+      setTimeout(function() {
+        $(".notification").css("opacity", "1");
+      }, 2000)
+
+    })
+  </script>
+
+  <!--html begins here-->
 
   <div class="bgcontainer">
 
@@ -66,7 +94,7 @@
 <div class="footer-wpr">
   <div class="footer">
       <div class="left-casestudy">
-        <p><img src="images/arrowdown.png" /> See case study</p>
+        <p class="fade-out"><img src="images/arrowdown.png" /> See case study</p>
       </div>
       <div class="right">
         <p>

@@ -7,26 +7,71 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+/*general styles*/
+
+h1 {
+  font-size: 45px;
+  line-height: 72px;
+  color: white;
+}
+
+h2 {
+  font-size: 24px;
+  color: white;
+}
+
+h1 span {
+  opacity: .1;
+}
+
+p {
+  font-size: 15px;
+  line-height: 24px;
+  color: white;
+  font-weight: 500;
+}
+
+p span {
+  font-weight: 400;
+  opacity: .5;
+}
+
+/*class styles*/
+
+.bg-img {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-image: url("../images/heroimg.png");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  width: 100%;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.bg-layer {
+  background-color: black;
+  left: 0;
+  top: 0;
+  transition: 0.5s;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: -2;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 16px;
-  background: url(../images/heroimg.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-color: black;
 }
 
 .hero {
   grid-column: 3 / 12;
-  border-style: solid;
-  border-color: red;
-  border-width: 1px;
   height: 100vh;
 }
-
 
 .hero h1 {
   top: 35%;
@@ -39,8 +84,8 @@ body {
   justify-content: space-between;
   position: fixed;
   bottom: 10px;
-  width: 70%;
-  left: 52%;
+  width: 74.5%;
+  left: 54.25%;
   transform: translateX(-50%);
 }
 
@@ -54,6 +99,10 @@ body {
     background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #000000 100%);
     opacity: 0.4;
   }
+
+.fade-out {
+      transition: 0.5s;
+}
 
 .left img, .left-casestudy img {
   width: 9px;
@@ -145,35 +194,6 @@ body {
 .social .logo img {
   width: 100%;
 }
-
-
-h1 {
-  font-size: 45px;
-  line-height: 72px;
-  color: white;
-}
-
-h2 {
-  font-size: 24px;
-  color: white;
-}
-
-h1 span {
-  opacity: .2;
-}
-
-p {
-  font-size: 15px;
-  line-height: 24px;
-  color: white;
-  font-weight: 500;
-}
-
-p span {
-  font-weight: 400;
-  opacity: .5;
-}
-
 
 .project-wpr {
   display: flex;
@@ -310,6 +330,80 @@ p span {
   margin: 0;
   width: 500px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .notification {
+      position: fixed;
+      top: 24px; right: 8.5vw;
+      background-color: #ffffff;
+      opacity: 0;
+      width: 345px;
+      transition: 0.5s;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
+      z-index: 1;
+    }
+
+    .message {
+      font-size: 12px;
+      color: black;
+      font-weight: 400;
+      line-height: 16px;
+      margin: 0;
+    }
+
+    .buttons {
+      border-width: 1px;
+      border-color: #e1e1e1;
+      border-style: solid;
+      padding: 10px;
+      width: 72px;
+      align-items: center;
+      margin: 0;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      font-size: 10px;
+      letter-spacing: 2px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .notificationicon {
+      width: 32px;
+      margin-left: 24px;
+    }
+
+    .notificationmessage {
+      margin-bottom: 8px;
+      margin-top: 8px;
+      width: 165px;
+    }
+
+
+    .messageicon {
+      width: 24px;
+
+
+    }
+
+
+
 
 
 

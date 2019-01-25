@@ -43,7 +43,7 @@ p span {
   top: 24px; right: 8.5vw;
   background-color: #ffffff;
   opacity: 0;
-  width: 345px;
+  width: 328px;
   transition: 0.5s;
   border-radius: 6px;
   display: flex;
@@ -354,6 +354,37 @@ p span {
   margin-bottom: 88px;
 }
 
+.link {
+  grid-column: 3 /12;
+  margin-bottom: 144px;
+  text-align: center;
+}
+
+.link a, .back a {
+  text-decoration: none;
+}
+
+.back {
+  grid-column: 3 / 10;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.back a p {
+  margin-bottom: 25px;
+  opacity: 1;
+}
+
+.link a h2 {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.link a h2:hover {
+  opacity: 0.5;
+}
+
 .image-wpr img {
   width: 100%;
 }
@@ -385,21 +416,10 @@ p span {
 
 
     .buttons {
-      border-width: 1px;
-      border-color: red;
-      border-style: solid;
-      padding: 10px;
-      width: 56px;
       margin: 0;
-    }
-
-    .buttons ul {
-      list-style: none;
-      margin: 0;
-    }
-
-    .buttons ul li {
-      text-align: left;
+      width: 80px;
+      border-left: 1px solid #e0e0e0; 
+      height: 60px;
     }
 
     .buttons a {
@@ -407,16 +427,21 @@ p span {
       font-size: 10px;
       letter-spacing: 2px;
       font-weight: 600;
-      margin: 0;
+      margin-top: 1px;
+      padding: 0;
+      display: block;
+      text-align: center;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+
+    .reply {
+      color: black;
     }
 
     .close {
-      opacity: 0.3;
-      border-width: 1px;
-      border-color: red;
-      border-style: solid;
-      margin-top: 16px;
-
+      border-top: 1px solid #e0e0e0;
+      color: #B2B2B2;
     }
 
 

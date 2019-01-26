@@ -149,6 +149,12 @@ p span {
   animation: infiniteNext 1.5s ease infinite;
 }
 
+.back img {
+  width: 16px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
 
 @keyframes infiniteNext {
   0% {

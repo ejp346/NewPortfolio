@@ -76,6 +76,35 @@ p span {
   width: 24px;
 }
 
+.buttons {
+  margin: 0;
+  width: 80px;
+  border-left: 1px solid #e0e0e0; 
+  height: 60px;
+}
+
+.buttons a {
+  text-decoration: none;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-top: 1px;
+  padding: 0;
+  display: block;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.reply {
+  color: black;
+}
+
+.close {
+  border-top: 1px solid #e0e0e0;
+  color: #B2B2B2;
+}
+
 .bg-img {
   position: fixed;
   left: 0;
@@ -396,7 +425,7 @@ p span {
 }
 
 .description-wpr p {
-  width: 552px;
+  width: 55%;
 }
 
 .hero-columbia h1 {
@@ -410,48 +439,101 @@ p span {
 
 
 
+/*Responsive Designs*/
+
+@media (min-width: 1300px) {
+h1 {
+  font-size: 50px;
+  line-height: 80px;
+  color: white;
+}
+
+h2 {
+  font-size: 30px;
+}
+.project-wpr .txt-wpr {
+  width: 800px;
+}
+}
 
 
+@media (max-width: 900px) {
+.project-wpr a {
+    left: 40px;
+}
+.project-wpr a:hover {
+  left: 55px;
+}
+.project-wpr .txt-wpr p {
+  padding-left: 64px;
+}
+}
 
+@media (max-width: 768px) {
+.grid, .casestudy-wpr {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.grid-columbia {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 80px;
+}
+.hero, .hero-columbia, .social, .content, .description-wpr, .image-wpr, .back, .link {
+  grid-column: 1 / 13;
+}
+.social ul {
+  display: none;
+}
+h1 {
+  font-size: 30px;
+  line-height: 40px;
+  color: white;
+}
+h2 {
+  font-size: 20px;
+}
+.hero h1, .hero-columbia h1 {
+   top: 45%;
+}
+.project-wpr .txt-wpr {
+   width: 300px;
+}
+.project-wpr, .description-wpr, .image-wpr {
+   margin-bottom: 80px;
+}
+.left, .left-casestudy {
+   display: none;
+}
+.back {
+  text-align: center;
+  margin-bottom: 88px;
+}
+.link {
+  margin-bottom: 56px;
+}
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  bottom: 10px;
+  width: 92%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+}
 
-
-
-
-
-
-
-
-    .buttons {
-      margin: 0;
-      width: 80px;
-      border-left: 1px solid #e0e0e0; 
-      height: 60px;
-    }
-
-    .buttons a {
-      text-decoration: none;
-      font-size: 10px;
-      letter-spacing: 2px;
-      font-weight: 600;
-      margin-top: 1px;
-      padding: 0;
-      display: block;
-      text-align: center;
-      padding-top: 8px;
-      padding-bottom: 8px;
-    }
-
-    .reply {
-      color: black;
-    }
-
-    .close {
-      border-top: 1px solid #e0e0e0;
-      color: #B2B2B2;
-    }
-
-
-
+@media (max-width: 450px) {
+  .description-wpr {
+    display: block;
+  }
+  .description-wpr p {
+    width: 100%;
+  }
+  .description-wpr h2 {
+    margin-bottom: 24px;
+  }
+}
 
 
 

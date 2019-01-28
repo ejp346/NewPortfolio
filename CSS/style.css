@@ -3,6 +3,10 @@ html, body {
   padding: 0;
 }
 
+html {
+  background-color: black;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -144,6 +148,21 @@ p span {
   top: 35%;
   position: absolute;
   margin: 0;
+  animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20%, 0);
+    transform: translate3d(0, 20%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .footer {
@@ -433,10 +452,16 @@ p span {
   position: absolute;
   margin: 0;
   width: 500px;
+  animation: fadeInUp 1s ease;
 }
 
-
-
+.hero-columbia p {
+  top: 63%;
+  position: absolute;
+  margin: 0;
+  width: 500px; 
+  animation: fadeInUp 1s ease;
+}
 
 
 /*Responsive Designs*/
@@ -495,6 +520,9 @@ h2 {
 }
 .hero h1, .hero-columbia h1 {
    top: 45%;
+}
+.hero-columbia p {
+  top: 56%;
 }
 .project-wpr .txt-wpr {
    width: 300px;

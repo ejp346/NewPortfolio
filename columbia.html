@@ -13,47 +13,31 @@
 </head>
 <body>
 
-<!-- <script>
-  if ($(window).width() > 960) {
-    console.log("Whoops!");
+<script>
+  if ($(window).width() > 450) {
 
     jQuery('body').css('display','none');
+
     jQuery(document).ready(function() {
       jQuery('body').fadeIn();
-      jQuery('.logo').on('click',function(event){
+      jQuery('.logo').on('click',function(event) {
         var thetarget = this.getAttribute('target')
         if (thetarget != "_blank"){     
           var thehref = this.getAttribute('href')
           event.preventDefault();
           jQuery('body').fadeOut(function(){
-            //alert(thehref)
             window.location = thehref         
           });
         }
       });
     });
+
     setTimeout(function(){
       jQuery('body').fadeIn();
     },1000)
   }
-</script> -->
-
-<script type="text/javascript">
-  $(document).ready(function() {
-      var heightOfWindow = $(window).scrollTop() + $(window).height();
-      var halfOfWindow = heightOfWindow / 2;
-
-    $(document).on('scroll', function(){
-      var caseStudyWprTop = $(".casestudy-wpr").offset().top - $(window).scrollTop();
-
-      if (caseStudyWprTop < halfOfWindow) {
-        $(".fade-out").css("opacity", "0");
-      } else {
-        $(".fade-out").css("opacity", "1");
-      }
-    })
-  })
 </script>
+
 
   <div class="bgcontainer">
 

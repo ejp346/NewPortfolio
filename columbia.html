@@ -15,7 +15,7 @@
   jQuery('body').css('display','none');
   jQuery(document).ready(function() {
     jQuery('body').fadeIn();
-    jQuery('a').on('click',function(event){
+    jQuery('.logo').on('click',function(event){
       var thetarget = this.getAttribute('target')
       if (thetarget != "_blank"){     
         var thehref = this.getAttribute('href')
@@ -114,7 +114,7 @@
     </div>
 
     <div class="back">
-      <a href="./index.html"><p><img src="images/backarrow.png" />Back to all projects</p></a>
+      <a class="logo" href="./index.html"><p><img src="images/backarrow.png" />Back to all projects</p></a>
     </div>
 
   </div>

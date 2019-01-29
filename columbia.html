@@ -9,55 +9,51 @@
    <link rel="stylesheet" href="CSS/normalize.css">
    <link rel="stylesheet" href="CSS/style.css">
    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-<script>
-  jQuery('body').css('display','none');
-  jQuery(document).ready(function() {
-    jQuery('body').fadeIn();
-    jQuery('.logo').on('click',function(event){
-      var thetarget = this.getAttribute('target')
-      if (thetarget != "_blank"){     
-        var thehref = this.getAttribute('href')
-        event.preventDefault();
-        jQuery('body').fadeOut(function(){
-          //alert(thehref)
-          window.location = thehref         
-        });
-      }
-    });
-  });
-  setTimeout(function(){
-    jQuery('body').fadeIn();
-  },1000)
-</script>
 
-<!-- JavaScript begins here! -->
+<!-- <script>
+  if ($(window).width() > 960) {
+    console.log("Whoops!");
 
-  <script type="text/javascript">
-    $(document).ready(function() {
-        var heightOfWindow = $(window).scrollTop() + $(window).height();
-        var halfOfWindow = heightOfWindow / 2;
-
-      $(document).on('scroll', function(){
-        var triggerDivTopPos = $(".casestudy-wpr").offset().top - $(window).scrollTop();
-
-        if (triggerDivTopPos < halfOfWindow) {
-          $(".fade-out").css("opacity", "0");
-        } else {
-          $(".fade-out").css("opacity", "1");
+    jQuery('body').css('display','none');
+    jQuery(document).ready(function() {
+      jQuery('body').fadeIn();
+      jQuery('.logo').on('click',function(event){
+        var thetarget = this.getAttribute('target')
+        if (thetarget != "_blank"){     
+          var thehref = this.getAttribute('href')
+          event.preventDefault();
+          jQuery('body').fadeOut(function(){
+            //alert(thehref)
+            window.location = thehref         
+          });
         }
-      })
+      });
+    });
+    setTimeout(function(){
+      jQuery('body').fadeIn();
+    },1000)
+  }
+</script> -->
 
-      // This notification will fade in after 2 seconds (2000 miliseconds is how JavaScript determines 2 seconds)
-      setTimeout(function() {
-        $(".notification").css("opacity", "1");
-      }, 2000)
+<script type="text/javascript">
+  $(document).ready(function() {
+      var heightOfWindow = $(window).scrollTop() + $(window).height();
+      var halfOfWindow = heightOfWindow / 2;
 
+    $(document).on('scroll', function(){
+      var caseStudyWprTop = $(".casestudy-wpr").offset().top - $(window).scrollTop();
+
+      if (caseStudyWprTop < halfOfWindow) {
+        $(".fade-out").css("opacity", "0");
+      } else {
+        $(".fade-out").css("opacity", "1");
+      }
     })
-  </script>
-
-  <!--html begins here-->
+  })
+</script>
 
   <div class="bgcontainer">
 

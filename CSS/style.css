@@ -22,6 +22,7 @@ h1 {
 h2 {
   font-size: 24px;
   color: white;
+  margin: 0;
 }
 
 h1 span {
@@ -36,7 +37,8 @@ p {
 }
 
 .description-wpr p {
-  opacity: 0.9;
+  opacity: 0.5;
+  margin: 0;
 }
 
 p span {
@@ -366,7 +368,7 @@ p span {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 16px;
-  background: url(../images/project.png);
+  background: url(../images/columbiabg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -388,6 +390,44 @@ p span {
   height: 100vh;
 }
 
+.grid-adaptive {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 16px;
+  background: url(../images/adaptivebg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  margin-bottom: 144px;
+  height: 100vh;
+}
+
+.grid-melrobbins {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 16px;
+  background: url(../images/melbg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  margin-bottom: 144px;
+  height: 100vh;
+}
+
+.grid-dds {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 16px;
+  background: url(../images/dds.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  margin-bottom: 144px;
+  height: 100vh;
+}
 
 
 .bgcontainer {
@@ -509,12 +549,12 @@ h2 {
   margin-left: 16px;
   margin-right: 16px;
 }
-.grid-columbia, .grid-thasos {
+.grid-columbia, .grid-thasos, .grid-adaptive, .grid-melrobbins, .grid-dds {
   padding-left: 16px;
   padding-right: 16px;
   margin-bottom: 80px;
 }
-.hero, .hero-columbia, .grid-thasos, .social, .content, .description-wpr, .image-wpr, .back, .link {
+.hero, .hero-columbia, .grid-thasos, .grid-dds, .grid-adaptive, .grid-melrobbins, .social, .content, .description-wpr, .image-wpr, .back, .link {
   grid-column: 1 / 13;
 }
 .social ul {
@@ -571,6 +611,9 @@ h2 {
   }
   .description-wpr h2 {
     margin-bottom: 24px;
+  }
+  .hero {
+    height: 80vh;
   }
   .hero-columbia .case-header {
     width: 350px;

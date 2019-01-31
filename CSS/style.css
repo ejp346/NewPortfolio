@@ -25,14 +25,18 @@ h2 {
 }
 
 h1 span {
-  opacity: .1;
+  opacity: .15;
 }
 
 p {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 24px;
   color: white;
   font-weight: 400;
+}
+
+.description-wpr p {
+  opacity: 0.9;
 }
 
 p span {
@@ -362,7 +366,7 @@ p span {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 16px;
-  background: url(../images/adaptivebg.png);
+  background: url(../images/project.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -370,6 +374,21 @@ p span {
   margin-bottom: 144px;
   height: 100vh;
 }
+
+.grid-thasos {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 16px;
+  background: url(../images/thasosbg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  margin-bottom: 144px;
+  height: 100vh;
+}
+
+
 
 .bgcontainer {
   background-color: black;
@@ -395,6 +414,11 @@ p span {
 
 .image-wpr {
   grid-column: 3 / 12;
+  margin-bottom: 88px;
+}
+
+.image-wpr-full {
+  grid-column: 1 / 13;
   margin-bottom: 88px;
 }
 
@@ -429,7 +453,7 @@ p span {
   opacity: 0.5;
 }
 
-.image-wpr img {
+.image-wpr img, .image-wpr-full img {
   width: 100%;
 }
 
@@ -485,12 +509,12 @@ h2 {
   margin-left: 16px;
   margin-right: 16px;
 }
-.grid-columbia {
+.grid-columbia, .grid-thasos {
   padding-left: 16px;
   padding-right: 16px;
   margin-bottom: 80px;
 }
-.hero, .hero-columbia, .social, .content, .description-wpr, .image-wpr, .back, .link {
+.hero, .hero-columbia, .grid-thasos, .social, .content, .description-wpr, .image-wpr, .back, .link {
   grid-column: 1 / 13;
 }
 .social ul {

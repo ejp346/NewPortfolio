@@ -362,7 +362,7 @@ p span {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 16px;
-  background: url(../images/columbiabg.png);
+  background: url(../images/adaptivebg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

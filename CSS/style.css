@@ -648,7 +648,13 @@ h2 {
 
 @media (max-width: 300px) {
   .notification {
-    width: 300px;
+    width: 280px;
+}
+.notificationicon {
+  width: 32px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
 }
 
 

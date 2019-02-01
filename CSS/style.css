@@ -626,6 +626,7 @@ h2 {
   }
   .notification {
     right: 6vw;
+    width: 300px;
   }
   .description-wpr {
     display: block;
@@ -640,8 +641,8 @@ h2 {
     height: 80vh;
   }
   .hero-columbia .case-header {
-    width: 350px;
-    top: 30%;
+    width: 300px;
+    top: 25%;
   }
 
 }

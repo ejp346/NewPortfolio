@@ -626,7 +626,6 @@ h2 {
   }
   .notification {
     right: 6vw;
-    width: 300px;
   }
   .description-wpr {
     display: block;
@@ -642,12 +641,13 @@ h2 {
   }
   .hero-columbia .case-header {
     top: 30%;
+    width: 300px;
   }
 
 }
 
 @media (max-width: 300px) {
-  .hero-columbia .case-header {
+  .notification {
     width: 300px;
 }
 

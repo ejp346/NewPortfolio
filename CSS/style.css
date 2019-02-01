@@ -646,14 +646,17 @@ h2 {
 
 }
 
-@media (max-width: 300px) {
+@media (max-width: 320px) {
   .notification {
-    width: 280px;
+    width: 270px;
 }
 .notificationicon {
   width: 32px;
   margin-left: 8px;
   margin-right: 8px;
+}
+.project-wpr .txt-wpr {
+   width: 220px;
 }
 }
 

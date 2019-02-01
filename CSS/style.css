@@ -641,10 +641,14 @@ h2 {
     height: 80vh;
   }
   .hero-columbia .case-header {
-    width: 300px;
-    top: 25%;
+    top: 30%;
   }
 
+}
+
+@media (max-width: 300px) {
+  .hero-columbia .case-header {
+    width: 300px;
 }
 
 

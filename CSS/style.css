@@ -600,6 +600,16 @@ h2 {
 }
 
 @media (max-width: 450px) {
+  .hero h1 {
+  top: 30%;
+
+}
+  .bg-img {
+   background-image: url("../images/mobileheroimg.png");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
   .grid-dds {
    background: url(../images/ddsmobile.png);
    background-repeat: no-repeat;

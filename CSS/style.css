@@ -608,10 +608,7 @@ h2 {
   .mobilescroll {
     display: block;
     position: absolute;
-    top: 60%;
-  }
-  .hero h1 {
-    top: 25%;
+    top: 70%;
   }
   .bg-img {
    background-image: url(../images/mobileheroimg.png);

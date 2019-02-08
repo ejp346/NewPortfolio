@@ -120,9 +120,10 @@ p span {
   position: fixed;
   left: 0;
   top: 0;
-  background-image: url("../images/heroimg.png");
+  background-image: url(../images/heroimg.png);
   background-size: cover;
-  background-position: center center;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
   transition: 0.5s;
@@ -601,11 +602,10 @@ h2 {
 
 @media (max-width: 450px) {
   .hero h1 {
-  top: 30%;
-
-}
+    top: 30%;
+  }
   .bg-img {
-   background-image: url("../images/mobileheroimg.png");
+   background-image: url(../images/mobileheroimg.png);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;

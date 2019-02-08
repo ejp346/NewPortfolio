@@ -602,7 +602,7 @@ h2 {
 
 @media (max-width: 450px) {
   .hero h1 {
-    top: 40%;
+    top: 25%;
   }
   .bg-img {
    background-image: url(../images/mobileheroimg.png);

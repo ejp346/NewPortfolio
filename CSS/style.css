@@ -18,6 +18,9 @@ h1 {
   line-height: 64px;
   color: white;
 }
+.mobile-h1 {
+  display: none;
+}
 
 h2 {
   font-size: 24px;
@@ -605,10 +608,16 @@ h2 {
 }
 
 @media (max-width: 450px) {
+  .desktop-h1 {
+    display: none;
+  }
+  .mobile-h1 {
+    display: block;
+  }
   .mobilescroll {
     display: block;
     position: absolute;
-    top: 70%;
+    bottom: 30px;
   }
   .bg-img {
    background-image: url(../images/mobileheroimg.png);

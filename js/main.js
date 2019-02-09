@@ -34,7 +34,7 @@ $(document).ready(function() {
   // This notification will fade in after 2 seconds (2000 miliseconds is how JavaScript determines 2 seconds)
   setTimeout(function() {
     $(".notification").css("opacity", "1");
-  }, 2000)
+  }, 3000)
 
   $(".close").click(function() {
     $(".notification").css("opacity", "0");

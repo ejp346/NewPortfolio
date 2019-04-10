@@ -364,9 +364,30 @@ p span {
   margin-left: auto;
 }
 
+.project-wpr .img-6-wpr {
+  background-image: url("../images/timeline.png");
+  background-size: cover;
+  width: 600px;
+  height: 400px;
+  margin-left: auto;
+}
+
 
 
 /*Columbia Case Study*/
+
+.grid-timeline {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 16px;
+  background: url(../images/timelinebg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  margin-bottom: 144px;
+  height: 100vh;
+}
 
 .grid-columbia {
   display: grid;
@@ -553,12 +574,12 @@ h2 {
   margin-left: 16px;
   margin-right: 16px;
 }
-.grid-columbia, .grid-thasos, .grid-adaptive, .grid-melrobbins, .grid-dds {
+.grid-columbia, .grid-thasos, .grid-adaptive, .grid-melrobbins, .grid-dds, .grid-timeline {
   padding-left: 16px;
   padding-right: 16px;
   margin-bottom: 80px;
 }
-.hero, .hero-columbia, .grid-thasos, .grid-dds, .grid-adaptive, .grid-melrobbins, .social, .content, .description-wpr, .image-wpr, .back, .link {
+.hero, .hero-columbia, .grid-thasos, .grid-dds, .grid-adaptive, .grid-melrobbins, .grid-timeline, .social, .content, .description-wpr, .image-wpr, .back, .link {
   grid-column: 1 / 13;
 }
 .social ul {
@@ -628,6 +649,14 @@ h2 {
    background-position: center;
    background-size: cover;
   }
+
+  .grid-timeline {
+    background: url(../images/timelinemobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
   .grid-thasos {
    background: url(../images/thasosmobile.png);
    background-repeat: no-repeat;

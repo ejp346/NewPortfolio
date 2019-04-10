@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="EN-us">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta charset="UTF-8">
+   <title>Edward Park | UX Designer based in NYC</title>
+   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
+   <link rel="stylesheet" href="CSS/normalize.css">
+   <link rel="stylesheet" href="CSS/style.css">
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+<script>
+  if ($(window).width() > 450) {
+
+    jQuery('body').css('display','none');
+
+    jQuery(document).ready(function() {
+      jQuery('body').fadeIn();
+      jQuery('.logo').on('click',function(event) {
+        var thetarget = this.getAttribute('target')
+        if (thetarget != "_blank"){     
+          var thehref = this.getAttribute('href')
+          event.preventDefault();
+          jQuery('body').fadeOut(function(){
+            window.location = thehref         
+          });
+        }
+      });
+    });
+
+    setTimeout(function(){
+      jQuery('body').fadeIn();
+    },1000)
+  }
+</script>
+
+
+  <div class="bgcontainer">
+
+  <div class="grid-timeline">
+
+    <div class="social">
+      <a class="logo" href="./index.html"><img src="images/logo.png" /></a>
+      <ul>
+        <li class="linkedin">
+          <a href="https://www.linkedin.com/in/edward-park-b61208116/" target="_blank">
+            <img class="nohover" src="images/linkedin.png" />
+            <img class="hover" src="images/linkedinhover.png" />
+          </a>
+        </li>
+
+        <li class="instagram"><a href="https://www.instagram.com/stairs.media/" target="_blank">
+          <img class="nohover" src="images/instagram.png" />
+          <img class="hover" src="images/instagramhover.png" />
+        </a></li>
+
+        <li><a href="https://stairs.media/" target="_blank">
+          <img class ="nohover" src="images/stairs.png" />
+          <img class="hover" src="images/stairshover.png" />
+
+        </a></li>
+      </ul>
+    </div>
+
+
+    <div class="hero-columbia">
+    
+    <div class="case-header">
+      <h1>
+        Vlaams Vredesinstituut
+      </h1>
+      <p>Client as Freelancer</p>
+    </div>
+
+    </div>
+
+  </div>
+
+  <div class="casestudy-wpr">
+
+    <div class="description-wpr">
+      <h2>Description</h2>
+      <p>Vlaams Vredesinstituut was a project I designed for Weichie Projects. This client wanted a flexible timeline for their activities in 2018 that would be visually pleasing, but also come off professional. The main goal was to inform users on their societal goals through the use of an interactive timeline that quizzes users and provides researches, videos, images and events that further educate users based on their responses. </p>
+    </div>
+
+     <div class="description-wpr">
+      <h2>UX/UI Design</h2>
+      <p>Being a research oriented timeline, I designed an illustration-heavy page that would prevent users from being intimidated by the extensive information. The friendly visuals acted as an effort to make the content more appealing and consumable. Some of the dates on the timeline would have multiple streams of content that could get lost if stacked. In order to avoid this, I designed a structure that would group related videos, images and quotes and create a clear delineation by flipping the placement every other date. </p>
+    </div>
+
+    <style type="text/css">
+      video {
+        width: 100%;
+      }
+    </style>
+
+    <div class="image-wpr">
+     <img class="full-wdith" src="images/timeline2.png" />
+    </div>
+
+    <div class="image-wpr">
+     <video autoplay loop preload="auto" muted>
+        <source src="images/1.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="image-wpr">
+     <img class="full-wdith" src="images/timeline1.png" />
+    </div>
+
+    <div class="link">
+      <a href="https://tijdlijnjaarverslag18.vlaamsvredesinstituut.eu/" target="_blank"><h2>vlaamsvredesinstituut.eu</h2></a>
+    </div>
+
+    <div class="back">
+      <a class="logo" href="./index.html"><p><img src="images/backarrow.png" />Back to all projects</p></a>
+    </div>
+
+  </div>
+
+
+<div class="footer-wpr">
+  <div class="footer">
+      <div class="left-casestudy">
+        <p class="fade-out"><img src="images/arrowdown.png" /> See case study</p>
+      </div>
+      <div class="right">
+        <p>
+          <span>Reach me at</span> <a href="mailto:epark346@gmail.com">epark346@gmail.com</a>
+        </p>
+      </div>
+    </div>
+ </div>
+ </div>
+
+</body>
+</html>

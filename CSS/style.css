@@ -293,14 +293,14 @@ p span {
   margin-bottom: 200px;
 }
 
-.project-wpr a {
+.project-wpr .logo {
   text-decoration: none;
   position: relative;
   transition: 0.5s;
   left: 0;
 }
 
-.project-wpr a:hover {
+.project-wpr .logo:hover {
   left: 15px;
 }
 
@@ -558,10 +558,10 @@ h2 {
 
 
 @media (max-width: 900px) {
-.project-wpr a {
+.project-wpr .logo {
     left: 40px;
 }
-.project-wpr a:hover {
+.project-wpr .logo:hover {
   left: 55px;
 }
 .project-wpr .txt-wpr p {

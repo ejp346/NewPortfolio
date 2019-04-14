@@ -509,6 +509,11 @@ p span {
   opacity: 1;
 }
 
+.back a p:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
 .link a h2 {
   opacity: 1;
   transition: 0.5s;

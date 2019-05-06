@@ -234,7 +234,7 @@ p span {
 }
 
 .right a:hover {
-  color: #0054A5;
+  color: #5840cc;
 }
 
 .content, .description-wpr {
@@ -575,6 +575,7 @@ h2 {
 }
 
 @media (max-width: 768px) {
+
 .grid, .casestudy-wpr {
   margin-left: 16px;
   margin-right: 16px;

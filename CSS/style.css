@@ -697,6 +697,7 @@ h2 {
   }
   .hero h3 {
     top: 30%;
+    width: none;
   }
 
 }

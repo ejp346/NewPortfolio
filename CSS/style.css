@@ -28,24 +28,29 @@ h2 {
   margin: 0;
 }
 
-h1 span {
-  opacity: .15;
+h3 {
+  font-size: 30px;
+  line-height: 48px;
+  color: white;
+  font-weight: 500;
 }
 
 p {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   color: white;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .description-wpr p {
-  opacity: 0.5;
+  font-size: 13px;
+  opacity: 0.7;
   margin: 0;
+  font-weight: 400;
 }
 
 p span {
-  font-weight: 400;
+  font-weight: 500;
   opacity: .5;
 }
 
@@ -129,7 +134,7 @@ p span {
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
-  transition: 0.5s;
+  transition: opacity 0.5s;
   z-index: -1;
 }
 
@@ -155,11 +160,12 @@ p span {
   height: 100vh;
 }
 
-.hero h1 {
-  top: 35%;
+.hero h3 {
+  top: 40%;
   position: absolute;
   margin: 0;
   animation: fadeInUp 1s ease;
+  width: 400px;
 }
 
 @keyframes fadeInUp {
@@ -243,15 +249,14 @@ p span {
 
 .social {
   grid-column: 2 / 3;
-  width: 30px;
+  width: 28px;
   padding-top: 24px;
 }
 
 .social ul {
   position: fixed;
-  top: 35%;
+  top: 40%;
   list-style: none;
-  width: 35px;
   padding-left: 0;
 }
 
@@ -532,7 +537,7 @@ p span {
 }
 
 .hero-columbia .case-header {
-  top: 30%;
+  top: 35%;
   position: absolute;
   margin: 0;
   width: 500px;
@@ -550,9 +555,7 @@ p span {
 h1 {
   font-size: 50px;
   line-height: 80px;
-  color: white;
 }
-
 h2 {
   font-size: 30px;
 }
@@ -599,7 +602,7 @@ h1 {
 h2 {
   font-size: 20px;
 }
-.hero h1, .hero-columbia .case-header {
+.hero h3, .hero-columbia .case-header {
    top: 45%;
 }
 
@@ -631,12 +634,7 @@ h2 {
 }
 
 @media (max-width: 450px) {
-  .desktop-h1 {
-    display: none;
-  }
-  .mobile-h1 {
-    display: block;
-  }
+  
   .mobilescroll {
     display: block;
     position: absolute;
@@ -696,6 +694,9 @@ h2 {
   .hero-columbia .case-header {
     top: 30%;
     width: 300px;
+  }
+  .hero h3 {
+    top: 30%;
   }
 
 }

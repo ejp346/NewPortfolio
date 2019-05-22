@@ -11,7 +11,7 @@ $(document).ready(function() {
       var triggerDivTopPos = $(".content").offset().top - $(window).scrollTop();
 
       if (triggerDivTopPos < halfOfWindow) {
-        $(".bg-img").css("opacity", "0.3");
+        $(".bg-img").css("opacity", "0.2");
         $(".fade-out").css("opacity", "0");
       } else {
         $(".bg-img").css("opacity", "1");
@@ -31,7 +31,7 @@ $(document).ready(function() {
     
   })
 
-  // This notification will fade in after 2 seconds (2000 miliseconds is how JavaScript determines 2 seconds)
+  // This notification will fade in after 3 seconds
   setTimeout(function() {
     $(".notification").css("opacity", "1");
   }, 3000)
@@ -40,4 +40,21 @@ $(document).ready(function() {
     $(".notification").css("opacity", "0");
   })
 })
-  
+
+
+$(function() {
+
+  var documentEl = $(document),
+      fadeElem = $('.fade-scroll');
+
+      documentEl.on('scroll', function() {
+        var currScrollPos = documentEl.scrollTop();
+
+        fadeElem.each(function() {
+          var $this = $(this),
+          elemoffsetTop = $this.offset().top;
+          if (currScrollPos > elemoffsetTop) $this.css('opacity', 1 - (currScrollPos - elemoffsetTop)/400)
+
+        });
+      });
+  });

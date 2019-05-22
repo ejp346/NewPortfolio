@@ -39,6 +39,23 @@
       jQuery('body').fadeIn();
     },1000)
   }
+
+  $(function() {
+
+  var documentEl = $(document),
+      fadeElem = $('.fade-scroll');
+
+      documentEl.on('scroll', function() {
+        var currScrollPos = documentEl.scrollTop();
+
+        fadeElem.each(function() {
+          var $this = $(this),
+          elemoffsetTop = $this.offset().top;
+          if (currScrollPos > elemoffsetTop) $this.css('opacity', 1 - (currScrollPos - elemoffsetTop)/400)
+
+        });
+      });
+  });
 </script>
   
   <div class="notification">
@@ -82,15 +99,12 @@
       </ul>
     </div>
 
-
+    <div class="fade-scroll">
     <div class="hero">
-      <h1 class="desktop-h1">
-        I am a UX Designer</br>
-        <span>that dabbles in code.</span>
-      </h1>
-      <h1 class="mobile-h1">
-      UX Designer.</h1>
-
+      <h3 class="desktop-h3">
+        I am Edward, a UX Designer based in New York who dabbles in code. 
+      </h3>
+    </div>
       <div class="mobilescroll">
         <img src="images/arrowdown.png" />
       </div>
@@ -102,17 +116,19 @@
 
     <div class="content">
       
+      <div class="fade-scroll">
       <div class="project-wpr">
-        <div class="txt-wpr">
+       <div class="txt-wpr">
           <p>1/6</p>
           <a class="logo" href="./columbia.html"><h1>Columbia Neurosurgery</h1></a>
         </div>
 
         <a class="img-1-wpr" href="./columbia.html">
-          
         </a>
       </div>
+    </div>
 
+    <div class="fade-scroll">
       <div class="project-wpr">
         <div class="txt-wpr">
           <p>2/6</p>
@@ -120,10 +136,10 @@
         </div>
 
         <a class="img-2-wpr" href="./melrobbins.html"></a>
-          
-        
       </div>
+    </div>
 
+    <div class="fade-scroll">
       <div class="project-wpr">
         <div class="txt-wpr">
           <p>3/6</p>
@@ -134,7 +150,9 @@
           
         </a>
       </div>
+    </div>
 
+    <div class="fade-scroll">
       <div class="project-wpr">
         <div class="txt-wpr">
           <p>4/6</p>
@@ -145,7 +163,9 @@
           
         </a>
       </div>
+    </div>
 
+    <div class="fade-scroll">
       <div class="project-wpr">
         <div class="txt-wpr">
           <p>5/6</p>
@@ -156,7 +176,9 @@
           
         </a>
       </div>
+    </div>
 
+    <div class="fade-scroll">
       <div class="project-wpr">
         <div class="txt-wpr">
           <p>6/6</p>
@@ -167,6 +189,7 @@
           
         </a>
       </div>
+    </div>
 
 
     </div>

@@ -37,7 +37,7 @@ $(document).ready(function() {
   }, 3000)
 
   $(".close").click(function() {
-    $(".notification").css("opacity", "0");
+    $(".notification").css("transform", "translateX(200%)");
   })
 })
 

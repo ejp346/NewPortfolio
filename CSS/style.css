@@ -49,6 +49,13 @@ p {
   font-weight: 400;
 }
 
+.bio-text {
+  font-size: 13px;
+  opacity: 0.7;
+  margin: 0;
+  font-weight: 400;
+}
+
 p span {
   font-weight: 500;
   opacity: .5;

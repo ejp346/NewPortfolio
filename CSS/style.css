@@ -9,6 +9,7 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /*general styles*/
@@ -556,6 +557,63 @@ p span {
   animation: fadeInUp 1s ease;
 }
 
+
+/*About*/
+
+ .about-img {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-image: url(../images/aboutimg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  transition: opacity 0.5s;
+  z-index: -1;
+}
+
+.bio {
+  grid-column: 3 / 6;
+  margin-top: 30%;
+  animation: fadeInUp 1s ease;
+}
+
+.bio h3, p {
+  width: 368px;
+}
+
+.navigation {
+  grid-column: 2 / 12;
+  padding: 0;
+  margin-top: 24px;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.navigation li {
+  display: inline-block;
+  padding-right: 24px;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: white;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: ease 0.5s;
+}
+
+.navigation li a:hover {
+  opacity: 0.5;
+}
+
+.current {
+  opacity: 0.5;
+}
+
 /*Responsive Designs*/
 
 @media (min-width: 1300px) {
@@ -595,7 +653,7 @@ h2 {
   padding-right: 16px;
   margin-bottom: 80px;
 }
-.hero, .hero-columbia, .grid-thasos, .grid-dds, .grid-adaptive, .grid-melrobbins, .grid-timeline, .social, .content, .description-wpr, .image-wpr, .back, .link {
+.hero, .hero-columbia, .grid-thasos, .grid-dds, .grid-adaptive, .grid-melrobbins, .grid-timeline, .social, .content, .description-wpr, .image-wpr, .back, .link, .bio, .navigation {
   grid-column: 1 / 13;
 }
 .social ul {

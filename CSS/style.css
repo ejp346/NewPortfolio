@@ -204,7 +204,7 @@ p span {
       transition: 0.5s;
 }
 
-.left img, .left-casestudy img, .mobilescroll img {
+.left img, .left-casestudy img, .mobilescroll img, .left-about img {
   width: 9px;
   margin-right: 16px;
   vertical-align: middle;
@@ -614,6 +614,10 @@ p span {
   opacity: 0.5;
 }
 
+.left-about {
+  visibility: hidden;
+}
+
 /*Responsive Designs*/
 
 @media (min-width: 1300px) {
@@ -639,6 +643,18 @@ h2 {
 }
 .project-wpr .txt-wpr p {
   padding-left: 64px;
+}
+.left, .left-casestudy {
+   display: none;
+}
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  bottom: 10px;
+  width: 92%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 }
 
@@ -670,6 +686,12 @@ h2 {
 .hero h3, .hero-columbia .case-header {
    top: 45%;
 }
+.bio {
+  margin-top: 15%;
+}
+.bio h3, p {
+  width: 300px;
+}
 
 .project-wpr .txt-wpr {
    width: 300px;
@@ -677,24 +699,12 @@ h2 {
 .project-wpr, .description-wpr, .image-wpr {
    margin-bottom: 80px;
 }
-.left, .left-casestudy {
-   display: none;
-}
 .back {
   text-align: center;
   margin-bottom: 88px;
 }
 .link {
   margin-bottom: 56px;
-}
-.footer {
-  display: flex;
-  justify-content: flex-end;
-  position: fixed;
-  bottom: 10px;
-  width: 92%;
-  left: 50%;
-  transform: translateX(-50%);
 }
 }
 

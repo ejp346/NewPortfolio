@@ -15,10 +15,37 @@
 </head>
 <body>
 
+<script>
+  if ($(window).width() > 450) {
+
+    jQuery('body').css('display','none');
+
+    jQuery(document).ready(function() {
+
+      jQuery('body').fadeIn();
+      jQuery('.current, .nav-btn').on('click',function(event) {
+        var thetarget = this.getAttribute('target')
+        if (thetarget != "_blank"){     
+          var thehref = this.getAttribute('href')
+          event.preventDefault();
+          jQuery('body').fadeOut(function(){
+            window.location = thehref         
+          });
+        }
+      });
+
+    });
+
+    setTimeout(function(){
+      jQuery('body').fadeIn();
+    },1000)
+  }
+</script>
+
   <div class="grid">
 
     <ul class="navigation">
-      <li> <a href="./index.html"> HOME </a> </li>
+      <li> <a class="nav-btn" href="./index.html"> HOME </a> </li>
       <li> <a class="current" href="./about.html"> ABOUT </a> </li>
     </ul>
 
@@ -52,6 +79,21 @@
     </div>
 
     <div class="about-img"></div>
+
+
+    <div class="footer-wpr">
+  <div class="footer">
+      <div class="left-about">
+        <p class="fade-out"><img src="images/arrowdown.png" /> Learn more</p>
+      </div>
+      <div class="right">
+        <p>
+          <span>Reach me at</span> <a href="mailto:epark346@gmail.com">epark346@gmail.com</a>
+        </p>
+      </div>
+    </div>
+ </div>
+ </div>
 
 </body>
 </html>

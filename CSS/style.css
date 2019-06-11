@@ -163,9 +163,21 @@ p span {
   grid-column-gap: 16px;
 }
 
-.hero {
+.hero, .bio {
   grid-column: 3 / 12;
   height: 100vh;
+}
+
+.bio h3 {
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  animation: fadeInUp 1s ease;
+  width: 368px;
+}
+
+.bio-text {
+  padding-top: 30px;
 }
 
 .hero h3 {
@@ -574,18 +586,9 @@ p span {
   z-index: -1;
 }
 
-.bio {
-  grid-column: 3 / 6;
-  margin-top: 30%;
-  animation: fadeInUp 1s ease;
-}
-
-.bio h3, p {
-  width: 368px;
-}
-
 .navigation {
-  grid-column: 2 / 12;
+  position: absolute;
+  left: 8.5vw;
   padding: 0;
   margin-top: 24px;
   margin-bottom: 0;
@@ -686,9 +689,10 @@ h2 {
 .hero h3, .hero-columbia .case-header {
    top: 45%;
 }
-.bio {
-  margin-top: 15%;
+.navigation {
+  left: 16px;
 }
+
 .bio h3, p {
   width: 300px;
 }
@@ -796,9 +800,6 @@ h2 {
   font-size: 24px;
   line-height: 40px;
   width: 300px;
-}
-.bio {
-  margin-bottom: 200px;
 }
 }
 

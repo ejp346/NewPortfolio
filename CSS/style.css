@@ -663,6 +663,14 @@ h2 {
 
 @media (max-width: 768px) {
 
+.bio h3 {
+  width: 350px;
+}
+
+.social {
+  padding-top: 0px;
+}
+
 .grid, .casestudy-wpr {
   margin-left: 16px;
   margin-right: 16px;
@@ -792,10 +800,17 @@ h2 {
 .project-wpr .txt-wpr {
    width: 220px;
 }
-.hero h3 {
+.hero h3, .bio h3 {
   font-size: 24px;
   line-height: 40px;
   width: 300px;
+}
+
+.bio h3 {
+  top: 20%;
+}
+.left-about {
+  display: none;
 }
 }
 

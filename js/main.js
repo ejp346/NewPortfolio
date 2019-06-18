@@ -33,7 +33,7 @@ $(document).ready(function() {
 
   // This notification will fade in after 2 seconds
   setTimeout(function() {
-    $(".notification").css("opacity", "1");
+    $(".notification").css("transform", "translateX(0%)");
   }, 2000)
 
   $(".close").click(function() {

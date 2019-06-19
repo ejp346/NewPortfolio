@@ -784,7 +784,11 @@ h2 {
     width: 320px;
   }
   .about-img {
-    opacity: 0.8;
+    display: none;
+  }
+  
+  .bio h3 {
+    top: 20%;
   }
 
 }

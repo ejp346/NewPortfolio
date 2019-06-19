@@ -784,13 +784,12 @@ h2 {
     width: 320px;
   }
   .about-img {
-    display: none;
+   opacity: 0.7;
+   background-image: url(../images/mobileaboutimg.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
   }
-  
-  .bio h3 {
-    top: 20%;
-  }
-
 }
 
 @media (max-width: 320px) {

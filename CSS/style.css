@@ -398,9 +398,30 @@ p span {
   margin-left: auto;
 }
 
+.project-wpr .img-7-wpr {
+  background-image: url("../images/twohoursleep.png");
+  background-size: cover;
+  width: 600px;
+  height: 400px;
+  margin-left: auto;
+}
+
 
 
 /*Columbia Case Study*/
+
+.grid-twohoursleep {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 16px;
+  background: url(../images/twohoursleepbg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  background-color: black;
+  margin-bottom: 144px;
+  height: 100vh;
+}
 
 .grid-timeline {
   display: grid;
@@ -676,12 +697,12 @@ h2 {
   margin-left: 16px;
   margin-right: 16px;
 }
-.grid-columbia, .grid-thasos, .grid-adaptive, .grid-melrobbins, .grid-dds, .grid-timeline {
+.grid-columbia, .grid-thasos, .grid-adaptive, .grid-melrobbins, .grid-dds, .grid-timeline, .grid-twohoursleep {
   padding-left: 16px;
   padding-right: 16px;
   margin-bottom: 80px;
 }
-.hero, .hero-columbia, .grid-thasos, .grid-dds, .grid-adaptive, .grid-melrobbins, .grid-timeline, .social, .content, .description-wpr, .image-wpr, .back, .link, .bio, .navigation {
+.hero, .hero-columbia, .grid-thasos, .grid-dds, .grid-adaptive, .grid-melrobbins, .grid-timeline, .grid-twohoursleep, .social, .content, .description-wpr, .image-wpr, .back, .link, .bio, .navigation {
   grid-column: 1 / 13;
 }
 .social ul {

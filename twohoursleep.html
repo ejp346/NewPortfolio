@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="EN-us">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta charset="UTF-8">
+   <title>Edward Park | UX Designer based in NYC</title>
+   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
+   <link rel="stylesheet" href="CSS/normalize.css">
+   <link rel="stylesheet" href="CSS/style.css">
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+   <script>
+  if ($(window).width() > 450) {
+
+    jQuery('body').css('display','none');
+
+    jQuery(document).ready(function() {
+      jQuery('body').fadeIn();
+      jQuery('.logo, .current, .nav-btn').on('click',function(event) {
+        var thetarget = this.getAttribute('target')
+        if (thetarget != "_blank"){     
+          var thehref = this.getAttribute('href')
+          event.preventDefault();
+          jQuery('body').fadeOut(function(){
+            window.location = thehref         
+          });
+        }
+      });
+    });
+
+    setTimeout(function(){
+      jQuery('body').fadeIn();
+    },1000)
+  }
+</script>
+
+
+  <div class="bgcontainer">
+
+  <div class="grid-twohoursleep">
+
+    <ul class="navigation">
+      <li> <a class="nav-btn" href="./index.html"> HOME </a> </li>
+      <li> <a class="nav-btn" href="./about.html"> ABOUT </a> </li>
+    </ul>
+
+    <div class="social">
+      <ul>
+        <li class="linkedin">
+          <a href="https://www.linkedin.com/in/edward-park-b61208116/" target="_blank">
+            <img class="nohover" src="images/linkedin.png" />
+            <img class="hover" src="images/linkedinhover.png" />
+          </a>
+        </li>
+
+        <li class="instagram"><a href="https://www.instagram.com/stairs.media/" target="_blank">
+          <img class="nohover" src="images/instagram.png" />
+          <img class="hover" src="images/instagramhover.png" />
+        </a></li>
+
+        <li><a href="https://stairs.media/" target="_blank">
+          <img class ="nohover" src="images/stairs.png" />
+          <img class="hover" src="images/stairshover.png" />
+
+        </a></li>
+      </ul>
+    </div>
+
+
+    <div class="hero-columbia">
+    
+    <div class="fade-scroll">
+    <div class="case-header">
+      <h1>
+        Two Hours Sleep
+      </h1>
+      <p>Designed as Freelancer</p>
+    </div>
+    </div>
+
+    </div>
+
+  </div>
+
+  <div class="casestudy-wpr">
+
+    <div class="description-wpr">
+      <h2>Description</h2>
+      <p>Two Hours Sleep is a media company based in the UK passionate about development and always staying on the cutting edge of technology. Their love for their craft has led them to create a brand as a dedicated startup that works around the clock. Based on this, Two Hours Sleep wanted a friendly, illustrative heavy redesign that emulated their brand.</p>
+    </div>
+
+     <div class="description-wpr">
+      <h2>UX/UI Design</h2>
+      <p>From a design perspective, I wanted to incorporate the idea of "sleep", which led to utilizing darker colors and wave-like line illustrations to portray sleep waves. Using animation, the concept was dramatized with scrolling transitions from dark/light opacity giving visitors the emotional impact that there is a passage of time.</p>
+    </div>
+
+    <div class="image-wpr">
+     <img class="full-wdith" src="images/twohoursleep1.png" />
+    </div>
+
+    <div class="image-wpr">
+     <img class="full-wdith" src="images/twohoursleep2.png" />
+    </div>
+
+    <div class="image-wpr">
+     <img class="full-wdith" src="images/twohoursleep3.png" />
+    </div>
+
+
+    <div class="link">
+      <a href="https://www.twohoursleep.com/" target="_blank"><h2>twohoursleep.com</h2></a>
+    </div>
+
+    <div class="back">
+      <a class="logo" href="./index.html"><p><img src="images/backarrow.png" />Back to all projects</p></a>
+    </div>
+
+  </div>
+
+
+<div class="footer-wpr">
+  <div class="footer">
+      <div class="left-casestudy">
+        <p class="fade-out"><img src="images/arrowdown.png" /> See case study</p>
+      </div>
+      <div class="right">
+        <p>
+          <span>Reach me at</span> <a href="mailto:epark346@gmail.com">epark346@gmail.com</a>
+        </p>
+      </div>
+    </div>
+ </div>
+ </div>
+
+</body>
+</html>

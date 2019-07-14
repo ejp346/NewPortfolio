@@ -759,6 +759,13 @@ h2 {
    background-size: cover;
   }
 
+  .grid-twohoursleep {
+   background: url(../images/twohoursleepmobile.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+  }
+
   .grid-timeline {
     background: url(../images/timelinemobile.png);
     background-repeat: no-repeat;
